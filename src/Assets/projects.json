@@ -1,0 +1,44 @@
+[
+    {
+        "title": "VerifyClean",
+        "description": "Designed to manage and record beer line cleaning data, VerifyClean allows you to track and monitor the location, time, date and cleaning information of beer lines being cleaned by staff. \nUsing this app user can wirelessly(using BLE) connect to Automatic Beer Line Cleaning equipment: Verx, Vortex, Vortex-I and PLCS Automatic. VerifyClean App provides complete control over your beer line cleaning.",
+        "appStoreLink": "https://apps.apple.com/us/app/verifyclean/id1444363360",
+        "playStoreLink": "https://play.google.com/store/apps/details?id=com.verifyclean&hl=en_IN"
+    },
+    {
+        "title": "DraftClean",
+        "description": "Designed to manage and record beer line cleaning data, VerifyClean allows you to track and monitor the location, time, date and cleaning information of beer lines being cleaned by staff. \nUsing this app user can wirelessly(using BLE) connect to Automatic Beer Line Cleaning equipment: Verx, Vortex, Vortex-I and PLCS Automatic. VerifyClean App provides complete control over your beer line cleaning.",
+        "appStoreLink": "https://apps.apple.com/us/app/verifyclean/id1444363360",
+        "playStoreLink": "https://play.google.com/store/apps/details?id=com.verifyclean&hl=en_IN"
+    },
+    {
+        "title": "NovoPen POC",
+        "description": "NovoPen® 6 & NovoPen Echo® Plus are new, smart insulin pens that automatically record insulin dosing information about each injection. So patient don't have to. This app offers integration with \"NovoPen 6\". Patients can transfer injection history from Pen to application and track unit taken over a period of time.Sharing Injection history with unit can help to HCP to take informed decisions with adjustment of dosage.",
+        "appStoreLink": "https: //apps.apple.com/in/app/franklins-european-bathrooms/id1557434323",
+        "playStoreLink": ""
+    },
+    {
+        "title": "Resource Management",
+        "description": "Mutu empowers reuse by making it easy for staff to browse and instantly get access to things they need. Users can see all the resources that are available across the whole business right from their phones before they unnecessarily buy something new.",
+        "appStoreLink": "https://apps.apple.com/in/app/mutu-resource-management/id6446815858",
+        "playStoreLink": "https://play.google.com/store/apps/details?id=com.mutu.xchange"
+    },
+    {
+        "title": "CareMonitor",
+        "description": "CareMonitor is comprehensive health management & monitoring app which empowers you to manage your health and involve your healthcare team so that they can proactively help you in leading a healthier happier lifestyle.\nCareMonitor also enables you to seamlessly track health data such as blood pressure, weight, blood glucose, etc. from multiple sources in one place.",
+        "appStoreLink": "https://apps.apple.com/in/app/caremonitor/id1359688906",
+        "playStoreLink": "https://play.google.com/store/apps/details?id=com.health.caremonitor&hl=en_IN"
+    },
+    {
+        "title": "Franklins - European Bathrooms",
+        "description": "Order the products you need, when you need them, wherever you are! The Franklins’ trade app gives you and your team the flexibility to place orders for a job while you are onsite.",
+        "appStoreLink": "https://apps.apple.com/in/app/franklins-european-bathrooms/id1557434323",
+        "playStoreLink": ""
+    },
+    {
+        "title": "FridgeCheck",
+        "description": "This system uses DataLogger which can be placed on refrigerator and it monitors temperature of refrigerator. Application connects with DataLogger and download temperature records and creates report out of it. ",
+        "appStoreLink": "",
+        "playStoreLink": ""
+    }
+]
