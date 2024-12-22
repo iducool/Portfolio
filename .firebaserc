@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "idrishsorathiya-4d0e0"
-  }
+  },
+  "targets": {
+    "idrishsorathiya-4d0e0": {
+      "hosting": {
+        "idrishsorathiya": [
+          "idrishsorathiya"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

@@ -7,14 +7,14 @@
     },
     {
         "title": "DraftClean",
-        "description": "Designed to manage and record beer line cleaning data, VerifyClean allows you to track and monitor the location, time, date and cleaning information of beer lines being cleaned by staff. \nUsing this app user can wirelessly(using BLE) connect to Automatic Beer Line Cleaning equipment: Verx, Vortex, Vortex-I and PLCS Automatic. VerifyClean App provides complete control over your beer line cleaning.",
-        "appStoreLink": "https://apps.apple.com/us/app/verifyclean/id1444363360",
-        "playStoreLink": "https://play.google.com/store/apps/details?id=com.verifyclean&hl=en_IN"
+        "description": "Designed to manage and record beer line cleaning data, DraftClean allows you to track and monitor the location, time, date and cleaning information of beer lines being cleaned by staff. \nUsing this app user can wirelessly(using BLE) connect to Automatic Beer Line Cleaning equipment: Verx Automatic and Verx Lite. DraftClean App provides complete control over your beer line cleaning.",
+        "appStoreLink": "https://apps.apple.com/es/app/draftclean/id6474737908",
+        "playStoreLink": "https://play.google.com/store/apps/details?id=com.qualflow.outletclean&hl=en_IN"
     },
     {
         "title": "NovoPen POC",
         "description": "NovoPen® 6 & NovoPen Echo® Plus are new, smart insulin pens that automatically record insulin dosing information about each injection. So patient don't have to. This app offers integration with \"NovoPen 6\". Patients can transfer injection history from Pen to application and track unit taken over a period of time.Sharing Injection history with unit can help to HCP to take informed decisions with adjustment of dosage.",
-        "appStoreLink": "https: //apps.apple.com/in/app/franklins-european-bathrooms/id1557434323",
+        "appStoreLink": "https://www.novonordisk.com/our-products/pens-and-needles/novopen-4.html",
         "playStoreLink": ""
     },
     {
@@ -38,7 +38,13 @@
     {
         "title": "FridgeCheck",
         "description": "This system uses DataLogger which can be placed on refrigerator and it monitors temperature of refrigerator. Application connects with DataLogger and download temperature records and creates report out of it. ",
-        "appStoreLink": "",
+        "appStoreLink": "https://www.onsetcomp.com",
+        "playStoreLink": ""
+    },
+    {
+        "title": "Pact",
+        "description": "PACT is the application for Insurance domain companies, It simplifies the flow through application & eliminates form filling work for customers. The customer can check his claim status, details, receive notifications regarding any activity or updates. Application is fully dynamic & controllable through Web, which can generate dynamic questions with dependency & supporting multiple question types.",
+        "appStoreLink": "https://www.pactglobal.co.uk/",
         "playStoreLink": ""
     }
 ]

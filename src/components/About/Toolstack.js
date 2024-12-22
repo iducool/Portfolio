@@ -1,10 +1,9 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { BiLogoVisualStudio } from "react-icons/bi";
+import { GoCopilot } from "react-icons/go";
 import {
-  SiVisualstudiocode,
   SiPostman,
-  SiSlack,
   SiMacos,
   SiXcode,
   SiSourcetree,
@@ -16,25 +15,72 @@ function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <OverlayTrigger placement="bottom" overlay={<Tooltip>MacOS</Tooltip>}>
+          <div>
+            <SiMacos />
+          </div>
+        </OverlayTrigger>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiXcode />
+        <OverlayTrigger placement="bottom" overlay={<Tooltip>Xcode</Tooltip>}>
+          <div>
+            <SiXcode />
+          </div>
+        </OverlayTrigger>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <BiLogoVisualStudio />
+        <OverlayTrigger
+          placement="bottom"
+          overlay={<Tooltip>Visual Studio Code</Tooltip>}
+        >
+          <div>
+            <BiLogoVisualStudio />
+          </div>
+        </OverlayTrigger>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiAndroidstudio />
+        <OverlayTrigger
+          placement="bottom"
+          overlay={<Tooltip>Android Studio</Tooltip>}
+        >
+          <div>
+            <SiAndroidstudio />
+          </div>
+        </OverlayTrigger>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSourcetree />
+        <OverlayTrigger
+          placement="bottom"
+          overlay={<Tooltip>SourceTree</Tooltip>}
+        >
+          <div>
+            <SiSourcetree />
+          </div>
+        </OverlayTrigger>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <OverlayTrigger placement="bottom" overlay={<Tooltip>Postman</Tooltip>}>
+          <div>
+            <SiPostman />
+          </div>
+        </OverlayTrigger>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiCharles />
+        <OverlayTrigger placement="bottom" overlay={<Tooltip>Charles</Tooltip>}>
+          <div>
+            <SiCharles />
+          </div>
+        </OverlayTrigger>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <OverlayTrigger
+          placement="bottom"
+          overlay={<Tooltip>GitHub Copilot and Cursor AI</Tooltip>}
+        >
+          <div>
+            <GoCopilot />
+          </div>
+        </OverlayTrigger>
       </Col>
     </Row>
   );

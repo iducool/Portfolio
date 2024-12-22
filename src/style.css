@@ -685,6 +685,25 @@ button:focus {
   border: 2px solid #8a49a8;
 }
 
+.custom-pagination .page-item.active .page-link {
+  background-color: #623686 !important;
+  border-color: #623686 !important;
+  color: #fff !important;
+}
+
+.custom-pagination .page-link {
+  color: #623686;
+}
+
+.custom-pagination .page-link:hover {
+  color: #623686;
+  /* background-color: rgba(98, 54, 134, 0.1); */
+}
+
+.custom-pagination .page-item.disabled .page-link {
+  color: #6c757d;
+}
+
 .like-item {
   padding-top: 10px !important;
   font-size: 1.1em !important;
