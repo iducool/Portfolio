@@ -13,74 +13,74 @@ import {
 
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <OverlayTrigger placement="bottom" overlay={<Tooltip>MacOS</Tooltip>}>
-          <div>
-            <SiMacos />
-          </div>
-        </OverlayTrigger>
+    <Row>
+     <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
+          <OverlayTrigger placement="bottom" overlay={<Tooltip>MacOS</Tooltip>}>
+            <div>
+              <SiMacos />
+            </div>
+          </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <OverlayTrigger placement="bottom" overlay={<Tooltip>Xcode</Tooltip>}>
-          <div>
-            <SiXcode />
-          </div>
-        </OverlayTrigger>
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
+          <OverlayTrigger placement="bottom" overlay={<Tooltip>Xcode</Tooltip>}>
+            <div>
+              <SiXcode />
+            </div>
+          </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <OverlayTrigger
-          placement="bottom"
-          overlay={<Tooltip>Visual Studio Code</Tooltip>}
-        >
-          <div>
-            <BiLogoVisualStudio />
-          </div>
-        </OverlayTrigger>
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
+          <OverlayTrigger placement="bottom" overlay={<Tooltip>Visual Studio Code</Tooltip>}>
+            <div>
+              <BiLogoVisualStudio />
+            </div>
+          </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <OverlayTrigger
-          placement="bottom"
-          overlay={<Tooltip>Android Studio</Tooltip>}
-        >
-          <div>
-            <SiAndroidstudio />
-          </div>
-        </OverlayTrigger>
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
+          <OverlayTrigger placement="bottom" overlay={<Tooltip>Android Studio</Tooltip>}>
+            <div>
+                <SiAndroidstudio />
+            </div>
+          </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <OverlayTrigger
-          placement="bottom"
-          overlay={<Tooltip>SourceTree</Tooltip>}
-        >
-          <div>
-            <SiSourcetree />
-          </div>
-        </OverlayTrigger>
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
+          <OverlayTrigger placement="bottom" overlay={<Tooltip>SourceTree</Tooltip>}>
+            <div>
+              <SiSourcetree />
+            </div>
+          </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <OverlayTrigger placement="bottom" overlay={<Tooltip>Postman</Tooltip>}>
-          <div>
-            <SiPostman />
-          </div>
-        </OverlayTrigger>
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
+          <OverlayTrigger placement="bottom" overlay={<Tooltip>Postman</Tooltip>}>
+            <div>
+              <SiPostman />
+            </div>
+          </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <OverlayTrigger placement="bottom" overlay={<Tooltip>Charles</Tooltip>}>
-          <div>
-            <SiCharles />
-          </div>
-        </OverlayTrigger>
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
+          <OverlayTrigger placement="bottom" overlay={<Tooltip>Charles</Tooltip>}>
+              <SiCharles />
+          </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <OverlayTrigger
-          placement="bottom"
-          overlay={<Tooltip>GitHub Copilot and Cursor AI</Tooltip>}
-        >
-          <div>
-            <GoCopilot />
-          </div>
-        </OverlayTrigger>
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
+          <OverlayTrigger placement="bottom" overlay={<Tooltip>GitHub Copilot and Cursor AI</Tooltip>}>
+              <GoCopilot />
+          </OverlayTrigger>
+        </div>
       </Col>
     </Row>
   );

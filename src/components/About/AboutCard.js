@@ -4,25 +4,24 @@ import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
-      <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
+          <p className="lead">
             Hi, I’m Idrish Sorathiya, a passionate{" "}
             <span className="purple">Mobile App Developer</span> from Vadodara,
             India, with over <span className="purple">12 years</span> of
             experience in crafting innovative mobile solutions. My journey began
             in 2010 with <span className="purple">Native iOS development</span>,
             and since then, I’ve explored diverse technologies to broaden my
-            expertise. Hi Everyone, I am <br />
-            <br />I specialize in
+            expertise. Hi Everyone, I am <br />           
           </p>
-          <ul>
+          <br />
+          <h2 className="mb-4">I specialize in</h2>
+          <ul className="lead">
             <li className="about-activity">
-              <ImPointRight /> Flutter for Mobile and Web Applications
+              <ImPointRight />  Flutter for Mobile and Web Applications
             </li>
             <li className="about-activity">
-              <ImPointRight /> BLE Integrations
+              <ImPointRight />  BLE Integrations
               <ul>
                 <li>
                   Operated and integrated custom devices, including
@@ -35,12 +34,10 @@ function AboutCard() {
               </ul>
             </li>
             <li className="about-activity">
-              <ImPointRight /> Native iOS Development
+              <ImPointRight />  Native iOS Development
             </li>
           </ul>
         </blockquote>
-      </Card.Body>
-    </Card>
   );
 }
 

@@ -37,10 +37,14 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
-      <Container>
+      <Container fluid>
         {/* <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand> */}
+        <Navbar.Brand href="/" className="text-start">
+         <h5 className="mb-0 purple fw-bold">Idrish</h5>
+         <p className="fs-12 text-secondary mb-0">Mobile Engineer</p>
+        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 html {
   --section-background-color: linear-gradient(
     to bottom left,
@@ -12,6 +14,22 @@ html {
   );
 
   --imp-text-color: #c770f0;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .purple {
@@ -32,10 +50,11 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
+  background-color: rgba(255, 255, 255, 0.65);
+  background-image: url(./Assets/pre.svg); 
   background-repeat: no-repeat;
   background-position: center;
+  backdrop-filter: blur(10px);
 }
 
 #preloader-none {
@@ -76,16 +95,15 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: rgba(255, 255, 255, 0.85) !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 5px 15px 0px rgba(9, 5, 29, 0.05) !important;
   backdrop-filter: blur(15px) !important;
 }
 
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
 }
 
@@ -141,17 +159,20 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-  .navbar {
-    padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+  .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    transition: all 0.3s ease-out 0s !important;
+    box-shadow: 0px 5px 15px 0px rgba(9, 5, 29, 0.05) !important;
+    backdrop-filter: blur(15px) !important;
+    border: 10px;
+    margin: 10px 0;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .logo {
@@ -160,7 +181,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: #c770f0 !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -243,30 +264,31 @@ button:focus {
   }
 }
 #tsparticles {
-  position: fixed !important;
+  position: absolute !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  width: 100%;
   height: 100%;
 }
-
+#tsparticles canvas{
+  position: relative !important;
+}
 .home-header {
   padding-top: 80px !important;
 }
 
 .home-section {
   position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  /*background-image: var(--image-gradient), url(./Assets/home-bg.jpg);*/
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+  background-image: linear-gradient(to top, #e1e1f3 0%, #fffbfc 100%);
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  height: calc(100vh - 80px);
+  color: #222222;
   text-align: left;
 }
 
@@ -285,13 +307,13 @@ button:focus {
 }
 
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #be6adf !important;
-  font-weight: 600 !important;
+  /* font-size: 2.2em !important; */
+  /* color: #be6adf !important; */
+  /* font-weight: 600 !important; */
 }
 .Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #b562d6 !important;
+  /* font-size: 2.4em !important; */
+  color: var(--imp-text-color) !important;
 }
 
 @media (max-width: 767px) {
@@ -307,24 +329,22 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  text-align: center;
+  margin:  2rem auto;
 }
 
 @media (max-width: 767px) {
-  .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-  }
+ 
 }
 
 .home-about-section {
+  background-color: #ffffff;
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
 }
 
 .home-about-description {
-  color: white !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -338,13 +358,12 @@ button:focus {
 
 .home-about-social {
   text-align: center !important;
-  padding-top: 25px;
-  color: white !important;
+  padding-top:0px;
 }
 
 .home-about-social-links {
   justify-content: center !important;
-  padding-top: 15px !important;
+  padding-top: 5px !important;
   display: inline-block !important;
   position: relative !important;
   padding-inline-start: 0 !important;
@@ -358,40 +377,21 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: rgba(199, 112, 240, 0.25) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
 
-.home-social-icons::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #68187a;
-  transition: 0.5s;
-  transform: scale(0.9);
-  z-index: -1;
-}
-
-.home-social-icons:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
-}
-
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
+  color: #ffffff !important;
+  background-color: #87209e !important;
+  box-shadow: 0 5px 15px rgba(135, 32, 158, 0.5);
   text-shadow: 0 0 2px #87209e;
 }
 
 .social-icons {
   display: inline-block !important;
   padding-right: 15px;
-  padding-left: 15px;
 }
 
 .icon-colour {
@@ -402,7 +402,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: #c770f0;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -445,32 +445,36 @@ button:focus {
 /* Projects */
 /* --------- */
 .project-section {
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  position: relative;
 }
 
-.project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
+.project-card { 
+  width: 100%;  
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+  opacity: 0.93 ;
+  border: 1px solid rgba(200, 137, 230, 0.637) !important;
+  vertical-align: middle;
+  border-radius: 10px !important;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 5px 0px rgba(89, 4, 168, 0.0);
+  overflow: hidden;
+  transition: all ease 0.5s;
+  position: relative;   
 }
+.project-card-view .technology{
+  display: none;
+}
+
 .project-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  z-index: 9;
+  transform: scale(1);
+  box-shadow: 0px 5px 15px 0px rgba(89, 4, 168, 0.25) !important;
+}
+.project-card-view:hover .technology{
+  display: block;
 }
 
 .blog-card {
@@ -518,24 +522,20 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color:var(--imp-text-color) !important;
+  border-color:var(--imp-text-color)  !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #000000 !important;
+  border-color: #000000 !important;
 }
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
-  font-size: 2.3em !important;
-  font-weight: 500 !important;
-  padding-top: 10px !important;
 }
 
 /* --------- */
@@ -544,47 +544,32 @@ button:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  padding: 50px 0;
 }
 
 .tech-icons {
+  width: 100%;
   font-size: 4.5em !important;
-  margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1px solid rgba(200, 137, 230, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
-  border-radius: 5px !important;
-  display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  border-radius: 10px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 0px rgba(89, 4, 168, 0.0) !important;
   overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
+  transition: all ease 0.5s !important;
+  height: 140px;
+  position: relative;
 }
-
-@media (max-width: 767px) {
-  .tech-icons {
-    margin: 10px !important;
-  }
-}
+.tech-icons > div{ display: flex; justify-content: center; align-items: center;}
 
 .tech-icons:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
-}
-.tech-icon-images {
-  padding: 20px !important;
-  line-height: 1.6 !important;
-}
-
-.quote-card-view {
-  border: none !important;
-  color: white !important;
-  background-color: transparent !important;
+  transform: scale(1.125);
+  box-shadow: 0px 5px 15px 0px rgba(89, 4, 168, 0.25) !important;
 }
 
 .about-activity {
@@ -596,6 +581,9 @@ button:focus {
 @media (max-width: 767px) {
   .about-img {
     padding-top: 0 !important;
+  }
+  .project-card-view .technology{
+    display: block;
   }
 }
 /* --------- */
@@ -611,8 +599,6 @@ button:focus {
 }
 
 .resume {
-  padding-top: 50px;
-  padding-bottom: 50px;
   justify-content: center;
 }
 
@@ -759,4 +745,10 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+
+/* new Ui adjustment*/
+.fs-12{
+  font-size: 12px;
 }

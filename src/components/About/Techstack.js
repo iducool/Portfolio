@@ -14,98 +14,93 @@ import {
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <OverlayTrigger placement="bottom" overlay={<Tooltip>iOS</Tooltip>}>
-          <div>
-            <FaApple />
-          </div>
+    <Row>
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
+        <OverlayTrigger placement="bottom" overlay={<Tooltip>iOS</Tooltip>} >
+            <div><FaApple /></div>
         </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
         <OverlayTrigger placement="bottom" overlay={<Tooltip>Flutter</Tooltip>}>
-          <div>
-            <SiFlutter />
-          </div>
+            <div><SiFlutter /></div>
         </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
         <OverlayTrigger placement="bottom" overlay={<Tooltip>Android</Tooltip>}>
-          <div>
-            <SiAndroid />
-          </div>
+            <div><SiAndroid /></div>
         </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <OverlayTrigger placement="bottom" overlay={<Tooltip>Node.js</Tooltip>}>
-          <div>
-            <DiNodejs />
-          </div>
-        </OverlayTrigger>
+      <Col xs={6} sm={3} md={2} className="mb-3">
+        <div className="tech-icons">
+          <OverlayTrigger placement="bottom" overlay={<Tooltip>Node.js</Tooltip>}>
+              <div><DiNodejs /></div>
+          </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
         <OverlayTrigger
           placement="bottom"
-          overlay={<Tooltip>Bluetooth</Tooltip>}
-        >
-          <div>
-            <SiBluetooth />
-          </div>
+          overlay={<Tooltip>Bluetooth</Tooltip>}>
+            <div><SiBluetooth /></div>
         </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
         <OverlayTrigger placement="bottom" overlay={<Tooltip>Git</Tooltip>}>
-          <div>
-            <DiGit />
-          </div>
+            <div><DiGit /></div>
         </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
         <OverlayTrigger
           placement="bottom"
-          overlay={<Tooltip>PostgreSQL</Tooltip>}
-        >
-          <div>
-            <SiPostgresql />
-          </div>
+          overlay={<Tooltip>PostgreSQL</Tooltip>}>
+            <div><SiPostgresql /></div>
         </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
         <OverlayTrigger placement="bottom" overlay={<Tooltip>AWS</Tooltip>}>
-          <div>
-            <FaAws />
-          </div>
+            <div><FaAws /></div>
         </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
         <OverlayTrigger
           placement="bottom"
-          overlay={<Tooltip>Google Cloud</Tooltip>}
-        >
-          <div>
-            <SiGooglecloud />
-          </div>
+          overlay={<Tooltip>Google Cloud</Tooltip>}>
+            <div><SiGooglecloud /></div>
         </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
         <OverlayTrigger
           placement="bottom"
-          overlay={<Tooltip>Codemagic</Tooltip>}
-        >
-          <div>
-            <SiCodemagic />
-          </div>
+          overlay={<Tooltip>Codemagic</Tooltip>}>
+            <div><SiCodemagic /></div>
         </OverlayTrigger>
+        </div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={6} sm={3} md={2} className="mb-4">
+        <div className="tech-icons">
         <OverlayTrigger
           placement="bottom"
-          overlay={<Tooltip>Firebase</Tooltip>}
-        >
-          <div>
-            <IoLogoFirebase />
-          </div>
+          overlay={<Tooltip>Firebase</Tooltip>}>
+            <div><IoLogoFirebase /></div>
         </OverlayTrigger>
+        </div>
       </Col>
     </Row>
   );

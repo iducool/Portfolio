@@ -9,43 +9,33 @@ import Toolstack from "./Toolstack";
 
 function About() {
   return (
-    <Container fluid className="about-section">
-      <Particle />
-      <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <Col
-            md={7}
-            style={{
-              justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
-            }}
-          >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
-            </h1>
-            <Aboutcard />
-          </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
-          </Col>
-        </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
-        </h1>
+    <section>
+      <Container fluid className="position-relative overflow-hidden">
+        <Particle />
+        <Container className="position-relative z-index-1 py-5">
+          <h2 className="mt-5 mb-1">About me</h2>
+          <h1 className="fw-bold mb-4 mb-lg-5">Know Who <span className="purple">I'M</span></h1>
 
-        <Techstack />
-
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
+          <Row style={{ alignItems:"center", justifyContent: "center" }}>
+            <Col md={7} className="mb-4 mb-lg-5">
+              <Aboutcard />
+            </Col>
+            <Col md={5} className="about-img my-3 my-lg-4">
+              <img src={laptopImg} alt="about" className="img-fluid" />
+            </Col>
+          </Row>
+        </Container>     
+        </Container>  
+        <Container fluid className="position-relative overflow-hidden bg-white py-5 border-top">
+          <Container className="position-relative z-index-1">
+            <h2 className="mb-4">Professional <span className="purple">Skillset </span></h2>
+            <Techstack />
+            <br/>
+            <h2 className="mb-4"><span className="purple">Tools</span> I use</h2>
+            <Toolstack />
+          </Container>
       </Container>
-    </Container>
+      </section>
   );
 }
 

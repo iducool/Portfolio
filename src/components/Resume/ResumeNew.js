@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Pagination } from "react-bootstrap";
+import { Container, Row, Col, Pagination } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/MohmadIdrish_Sorathiya_Resume.pdf";
@@ -36,9 +36,75 @@ function ResumeNew() {
   }
 
   return (
-    <div>
-      <Container fluid className="resume-section">
+    <Container fluid className="py-5">
         <Particle />
+          <Container className="position-relative z-index-1">
+            <Row>
+              <Col md>
+                <h2 className="mt-5 mb-1">My Resume</h2>
+                <h1 className="fw-bold mb-3 mb-lg-5">All about <span className="purple">Work and Experience</span></h1>
+              </Col>
+              <Col md="auto" className="mt-lg-5 mb-5"> 
+                <Button variant="primary" href={pdf} target="_blank">
+                  <AiOutlineDownload />
+                  &nbsp;Download CV
+                </Button>
+              </Col>
+            </Row>
+
+            <Row className="resume">
+              <Col>
+                <Document
+                  file={pdf}
+                  className="d-flex justify-content-center border bg-white rounded mb-3"
+                  onLoadSuccess={onDocumentLoadSuccess} 
+                >
+                  <Page pageNumber={pageNumber} scale={width > 786 ? 1.7 : 0.6} />
+                </Document>
+              </Col>
+            </Row>
+
+            <Row style={{ justifyContent: "center", position: "relative", }} className="my-3">
+              <Pagination className="justify-content-center custom-pagination">
+                <Pagination.Prev
+                  onClick={previousPage}
+                  disabled={pageNumber <= 1}
+                />
+                {/* Add page numbers */}
+                {numPages && (
+                  <>
+                    {pageNumber > 2 && <Pagination.Ellipsis disabled />}
+
+                    {pageNumber > 1 && (
+                      <Pagination.Item
+                        onClick={() => setPageNumber(pageNumber - 1)}
+                      >
+                        {pageNumber - 1}
+                      </Pagination.Item>
+                    )}
+
+                    <Pagination.Item active>{pageNumber}</Pagination.Item>
+
+                    {pageNumber < numPages && (
+                      <Pagination.Item
+                        onClick={() => setPageNumber(pageNumber + 1)}
+                      >
+                        {pageNumber + 1}
+                      </Pagination.Item>
+                    )}
+
+                    {pageNumber < numPages - 1 && <Pagination.Ellipsis disabled />}
+                  </>
+                )}
+                <Pagination.Next
+                  onClick={nextPage}
+                  disabled={pageNumber >= numPages}
+                />
+              </Pagination>
+            </Row>
+
+          </Container>
+
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
@@ -50,76 +116,8 @@ function ResumeNew() {
             &nbsp;Download CV
           </Button>
         </Row>
-
-        <Row className="resume">
-          <Document
-            file={pdf}
-            className="d-flex justify-content-center"
-            onLoadSuccess={onDocumentLoadSuccess}
-          >
-            <Page pageNumber={pageNumber} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
-
-        <Row
-          style={{
-            justifyContent: "center",
-            position: "relative",
-            marginTop: "2rem",
-            marginBottom: "2rem",
-          }}
-        >
-          <Pagination className="justify-content-center custom-pagination">
-            <Pagination.Prev
-              onClick={previousPage}
-              disabled={pageNumber <= 1}
-            />
-            {/* Add page numbers */}
-            {numPages && (
-              <>
-                {pageNumber > 2 && <Pagination.Ellipsis disabled />}
-
-                {pageNumber > 1 && (
-                  <Pagination.Item
-                    onClick={() => setPageNumber(pageNumber - 1)}
-                  >
-                    {pageNumber - 1}
-                  </Pagination.Item>
-                )}
-
-                <Pagination.Item active>{pageNumber}</Pagination.Item>
-
-                {pageNumber < numPages && (
-                  <Pagination.Item
-                    onClick={() => setPageNumber(pageNumber + 1)}
-                  >
-                    {pageNumber + 1}
-                  </Pagination.Item>
-                )}
-
-                {pageNumber < numPages - 1 && <Pagination.Ellipsis disabled />}
-              </>
-            )}
-            <Pagination.Next
-              onClick={nextPage}
-              disabled={pageNumber >= numPages}
-            />
-          </Pagination>
-        </Row>
-
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
-      </Container>
-    </div>
+      
+      </Container>      
   );
 }
 

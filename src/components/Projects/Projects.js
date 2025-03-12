@@ -18,26 +18,25 @@ function Projects() {
   }, []);
 
   return (
-    <Container fluid className="project-section">
+    <Container fluid className="py-5 overflow-hidden">
       <Particle />
-      <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+      <Container className="position-relative z-index-1">
+      <h2 className="mt-5 mb-1">My Projects</h2>
+      <h1 className="fw-bold mb-4 mb-lg-5">Successfully <span className="purple">Completed Work</span></h1>
+       
+        <Row className="">
           {projectJsonObj.map((p) => (
-            <Col md={4} className="project-card">
-              <ProjectCard
-                imgPath={p.imgPath}
-                isBlog={p.isBlog}
-                title={p.title}
-                description={p.description}
-                appStoreLink={p.appStoreLink}
-                playStoreLink={p.playStoreLink}
-              />
+            <Col xs={12} md={6} lg={4} className="mb-4">
+              <div className="project-card">
+                <ProjectCard
+                  imgPath={p.imgPath}
+                  isBlog={p.isBlog}
+                  title={p.title}
+                  description={p.description}
+                  appStoreLink={p.appStoreLink}
+                  playStoreLink={p.playStoreLink}
+                />
+              </div>
             </Col>
           ))}
         </Row>

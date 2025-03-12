@@ -13,52 +13,39 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+        <Row className="align-items-center">
+          <Col md={7} >
+            <h1 className="mb-4">
+              Let me <span className="purple"> introduce </span> myself
             </h1>
-            <p className="home-about-body">
+            <p className="lead">
               I discovered my passion for creating impactful solutions through
               technology and have built a strong foundation in mobile and
               backend development. 🤷‍♂️
               <br />
               <br />I specialize in building mobile applications using
-              <i>
+              
                 <b className="purple">
                   {" "}
                   Flutter, MAUI, Xamarin, and Native iOS, with a focus on BLE
                   hardware integration.{" "}
                 </b>
-              </i>
-              <br />
-              <br />
-              My interests lie in &nbsp;
-              <i>
-                <b className="purple">creating innovative mobile solutions </b>{" "}
+              </p>
+              <p className="lead">
+              My interests lie in <b className="purple">creating innovative mobile solutions </b>{" "}
                 that seamlessly integrate hardware and software, as well as
                 exploring scalable backend systems with Node.js, Fastify,
                 Express, and PostgreSQL.
-              </i>
-              <br />
-              <br />
+                </p>
+              <p className="lead">
               Whenever possible, I enjoy contributing to open-source projects
               and crafting intuitive user experiences through modern
               technologies
             </p>
-          </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
+            <br/>
+
+            <h2>Find me on</h2>
+            <p className="mb-3">Feel free to <span className="purple">connect </span>with me</p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
@@ -92,7 +79,13 @@ function Home2() {
               </li>
             </ul>
           </Col>
+          <Col md={5} className="text-center">
+            <Tilt className="myAvtar">
+              <img src={myImg} className="img-fluid" alt="avatar" />
+            </Tilt>
+          </Col>
         </Row>
+       
       </Container>
     </Container>
   );
